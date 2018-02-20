@@ -1,0 +1,41 @@
+/*@media only screen and (min-width: 650px) {*/
+@media only screen{
+    
+    /*-----HEADER & NAVIGATION-----*/
+    .top-nav ul li, a{
+        display: inline-block;
+        border-top: 0px;
+        
+    }
+    
+    .navigation ul{
+        display: table;
+        margin: 0px auto;
+        border-top: 1px solid red;
+    }
+    
+/*    -----IMAGES PAGE-----*/
+    div.tall {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+}
+
+/*@media only screen and (min-width: 1000px) {*/
+
+@media only screen{
+    /*-----HEADER & NAVIGATION-----*/
+    .navigation ul{
+        float: right;
+        border: 0px;
+    }
+    
+    /*-----IMAGES PAGE-----*/
+    div.photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+
+}
