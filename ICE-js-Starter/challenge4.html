@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 4</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Mina">
+    <style>
+        .errormsg { 
+            /*font: Use a cool Google font*/
+            font-family:"Mina";
+            color:red;
+            display:none; } 
+    </style>
+    
+    <script type="text/javascript">
+    function checkForm(){
+			var fullname = document.getElementById('fullname').value;
+			var streetaddr = document.getElementById('streetaddr').value;
+			if ((fullname.length==0) && (streetaddr.length==0)) {
+				document.getElementById('nameerrormsg').style.display = 'block'
+				document.getElementById('addrerrormsg').style.display = 'block'
+				return false;
+			} else{
+				document.getElementById('nameerrormsg').style.display = 'none'
+				document.getElementById('addrerrormsg').style.display = 'none'
+			}
+			if (streetaddr.length==0) {
+				document.getElementById('addrerrormsg').style.display = 'block'
+				return false;
+			} else {
+				document.getElementById('addrerrormsg').style.display = 'none'
+			}
+			if (fullname.length==0) {
+				document.getElementById('nameerrormsg').style.display = 'block'
+				return false;
+			} else {
+				document.getElementById('nameerrormsg').style.display = 'none'
+			}
+		}
+    </script>
+</head>
+<body>
+    <h1>Challenge 4</h1>
+	<form action="challenge5.html" onsubmit="return checkForm();" name="form">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname"><br/>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr">
+            <p class="errormsg" id="addrerrormsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+</body>
+</html>

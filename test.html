@@ -1,0 +1,26 @@
+    <script type="text/javascript">
+    function checkForm(){
+			var fullname = document.getElementById('fullname').value;
+			var streetaddr = document.getElementById('streetaddr').value;
+			if ((fullname.length==0) && (streetaddr.length==0)) {
+				document.getElementById('nameerrormsg').style.display = 'block'
+				document.getElementById('addrerrormsg').style.display = 'block'
+				return false;
+			} else{
+				document.getElementById('nameerrormsg').style.display = 'none'
+				document.getElementById('addrerrormsg').style.display = 'none'
+			}
+			if (streetaddr.length==0) {
+				document.getElementById('addrerrormsg').style.display = 'block'
+				return false;
+			} else {
+				document.getElementById('addrerrormsg').style.display = 'none'
+			}
+			if (fullname.length==0) {
+				document.getElementById('nameerrormsg').style.display = 'block'
+				return false;
+			} else {
+				document.getElementById('nameerrormsg').style.display = 'none'
+			}
+		}
+    </script>
