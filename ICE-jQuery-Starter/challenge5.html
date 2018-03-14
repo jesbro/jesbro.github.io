@@ -35,11 +35,22 @@
 		text-align: center;
 	}
 	</style>
-
-	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
-	</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+      // YOUR CODE HERE
+        $(document).ready(function(){
+            $(".preview").on("focus onmouseover", function(){
+                $("#image").text($(this).attr("alt"));
+                $("#image").css("background-image", "url('"+$(this).attr("src")+'")');
+            })
+            
+//            $(".").on("events", function(){
+//                
+//            })
+        });
+        
+    </script>
 </head>
 
 <body>
