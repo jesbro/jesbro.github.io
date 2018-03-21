@@ -1,0 +1,13 @@
+*{
+    font-family: "Mina";
+}
+
+html {
+    background-color: aliceblue;
+}
+
+ h4 {
+    text-align: center;
+    background-color: lightsteelblue;
+    font-size: 30px;
+}
