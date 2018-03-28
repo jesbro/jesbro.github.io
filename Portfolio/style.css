@@ -1,0 +1,11 @@
+.social {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    background-color: darkgray;
+}
+
+.social img {
+    padding-left: 5%;
+    padding-top: 1%;
+}
