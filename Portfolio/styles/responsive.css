@@ -127,7 +127,7 @@
         margin: 0;
         color: white;
         position: relative;
-        z-index: 1;
+        z-index: .9;
     }
     .homepg h3{
         color: #DDDDDA; 
