@@ -42,6 +42,9 @@
         flex: 25%;
         max-width: 50%;
     }
+    .column p{
+    font-size: 1em;
+    }
     
     /*----FOOTER----*/
     .social img{
