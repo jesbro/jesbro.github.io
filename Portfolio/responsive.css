@@ -1,0 +1,88 @@
+/*Medium or tablet screen size*/
+@media only screen and (min-width: 650px) { 
+    
+    /*----ALL----*/
+    .container{
+        display: none;
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .navigation{
+        display: block;
+    }
+    
+    .navigation ul{
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .navigation ul li{
+        margin: auto;
+        border: .1em solid lightsteelblue;
+        border-radius: 1em;
+    }
+    
+    .navigation ul li a{
+        padding: 1em 3em 1em 3em;
+    }
+    
+    .head-nav a{
+        font-size: 1.5em;
+    }
+    
+    .navigation{
+        position: sticky;
+    }
+    
+    /*----ABOUT----*/
+    .column {
+        flex: 25%;
+        max-width: 50%;
+    }
+    
+    /*----FOOTER----*/
+    .social img{
+        width: 5%;
+        padding: 0 2em 0 2em;
+    }
+    
+}
+
+
+/*Large or desktop screen size*/
+@media only screen and (min-width: 1000px) {
+    
+    /*----ALL----*/
+    .top-nav{
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .content-image img{
+        width: 40%;
+    }
+    
+    /*----ABOUT----*/
+    .column {
+        flex: 25%;
+        max-width: 40%;
+        max-height: 40%;
+      }
+    
+    /*----PROJECTS----*/
+    .projs p{
+        text-align: center;
+    }
+    .projs img{
+        width: 60%;
+    }
+    
+    /*----FOOTER----*/
+    .social img{
+        width: 2%;
+        padding: 0 2em 0 2em;
+    }
+}

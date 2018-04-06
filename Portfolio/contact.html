@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina">
+    <link href="images/mlogo.JPG" rel="icon" type="image">
+    <!--Javascript-->
+	<script type="text/javascript" src="js/interactivity.js"></script>
+    <title>Jess Brown</title>
+</head>
+<body class="body-home">
+    <a href="#main-content" class="nav">Navigation</a> 
+    <header>
+        <nav id="top-nav" class="top-nav">
+            <div class="head-nav">
+                <div class="container" onclick="menuToggle(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+                <a href="index.html"><h1>Jess Brown</h1></a>
+                <div class="logo">
+                    <a href="index.html"><img src="images/mlogo.JPG" alt="Jess homepage"></a>
+                </div>
+            </div>
+            <div class="navigation" id= "navigation">
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                   <li><a href="contact.html" class="current-page">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="content-text">
+            <h2>Contact Me</h2>
+            <div class="contact-container">  
+              <form id="contact" action="mailto:jesbro@umich.edu" method="post">
+                <fieldset>
+                  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your email address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your phone number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                  <textarea placeholder="Your message...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+              </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin logo" width=6%></a>
+            <a href="https://www.gmail.com"><img src="images/email.png" alt="email logo" width=6%></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo" width=6%></a>
+        </div>
+    </footer>
+</body>
+</html>

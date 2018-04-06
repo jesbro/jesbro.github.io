@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina">
-        <link href="images/mlogo.JPG" rel="icon" type="image">
-        <title>Jess Brown</title>
-    </head>
-    <body>
-        <h1>Hellurrr</h1>
-    </body>
-    <footer>
-        <p class="social">
-            <a href="www.facebook.com">
-                <img src="images/mlogo.JPG" width=6%>
-            </a>
-            <img src="images/mlogo.JPG" width=6%>
-        </p>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina">
+    <!--Javascript-->
+	<script type="text/javascript" src="js/interactivity.js"></script>
+    <title>Jess Brown</title>
+</head>
+<body class="body-home">
+    <a href="#main-content" class="nav">Navigation</a> 
+    <header>
+        <nav id="top-nav" class="top-nav">
+            <div class="head-nav">
+                <div class="container" onclick="menuToggle(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+                <a href="index.html"><h1>Jess Brown</h1></a>
+                <div class="logo">
+                    <a href="index.html"><img src="images/mlogo.JPG" alt="Jess homepage"></a>
+                </div>
+            </div>
+            <div class="navigation" id="navigation">
+               <ul>
+                    <li><a class="current-page" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div class="content-image">
+            <img src="images/home_img.jpg" alt="boxing picture">
+        </div>
+        <div class="content-text">
+            <h2>Hi there!</h2>
+            <p>I'm Jess, and welcome to my portfolio.</p><p>Here you will find projects that I've completed, my interests and hobbies, and how to contact me.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin logo" width=6%></a>
+            <a href="https://www.gmail.com"><img src="images/email.png" alt="email logo" width=6%></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo" width=6%></a>
+        </div>
     </footer>
+</body>
 </html>
