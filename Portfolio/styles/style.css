@@ -33,7 +33,7 @@ html, body, header, footer{
     padding: 0;
 }
 header, footer {
-    background: linear-gradient(141deg, steelblue, #1fc8db, #2cb5e8);
+    background: linear-gradient(141deg, black, steelblue, black);
     color: #DDDDDA; 
 }
 body{
@@ -89,7 +89,6 @@ h6{
 	text-align: right;
     text-decoration: none;
     padding:  1.6em .75em .75em .75em;
-    background: linear-gradient(-141deg, #1fc8db, #2cb5e8);
 }
 .logo img{
 	height: 3em;
@@ -125,14 +124,14 @@ h6{
 /*-----HEADER & NAVIGATION-----*/
 header{
     width: 100%;
-    box-shadow: 0px 10px 25px 0px gray;
+    box-shadow: 0px 3px 10px 2px black;
 }
 
 .navigation{
     display: none;
     position: absolute;
     width: 100%;
-    background: linear-gradient(-120deg, steelblue, #1fc8db, #2cb5e8);
+    background: linear-gradient(-129deg, black, steelblue, black);
 }
 
 .navigation ul li a{
@@ -180,8 +179,9 @@ header{
 	text-align: center;
 }
 .top-nav ul li a.current-page{
-	color: darkblue;
+	color: steelblue;
 	font-weight: bold;
+    background: #DDDDDA;
 }
 .top-nav ul li a.current-page:before {
     padding-right: 4px;
@@ -229,25 +229,31 @@ header{
 }
 
 .projs{
-    text-align: center;
+    text-align: justify;
 }
-
 .projs img{
     width: 90%;
     box-shadow: 0px 10px 25px 0px gray;
+    display: block;
+    margin: 0 auto;
 }
+.projs p{
+        text-align: center;
+    }
 
 /*----ABOUT----*/
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 2%;
+    justify-content: center;
 }
+
 
 .column {
     flex: 25%;
     max-width: 50%;
-    padding: 0 4px;
+    padding: 0 2%;
 }
 
 .column img {
@@ -268,7 +274,7 @@ header{
 footer{
 	font-size: .85em;
 	text-align: center;
-	box-shadow: 0px -10px 30px 2px rgba(141, 141, 139, .75);
+	box-shadow: 0px -3px 10px 1px black;
     position: fixed;
     bottom: 0;
     width: 100%;

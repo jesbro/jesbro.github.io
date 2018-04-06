@@ -3,3 +3,11 @@ https://www.w3schools.com/howto/howto_css_menu_icon.asp
 
 Contact form html/css borrowed from codepen
 https://codepen.io/ssbalakumar/pen/uzDIA
+
+Menu toggle from Maddiefactured, stackoverflow, mozdev
+https://stackoverflow.com/questions/25735512/replace-div-content-onclick
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
+Background image help from w3schools, css-tricks
+https://www.w3schools.com/howto/howto_css_full_page.asp
+https://css-tricks.com/design-considerations-text-images/
