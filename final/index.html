@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/interactivity.js"></script>
 </head>
 <body>
     <h1>Jess Brown</h1>
@@ -17,15 +18,4 @@
         <button type="button" onclick="imageShow(this)">Show Image</button>
     </div>
 </body>
-<script>
-    function imageHide(x) {
-        x.classList.toggle("change");
-        document.getElementById("pic1").style.display = "none";
-    }
-    
-    function imageShow(x) {
-        x.classList.toggle("change");
-        document.getElementById("pic1").style.display = "block";
-    }
-</script>
 </html>
