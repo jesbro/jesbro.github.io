@@ -1,0 +1,36 @@
+/*-----MAIN-----*/
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+
+/*
+.header h1{
+    padding-bottom: 25px;
+}
+*/
+
+.images{
+    display: inline-flex;
+    flex-wrap:nowrap;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.images img{
+    height: 100%;
+    width: 40%;
+    padding: 5%;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    text-align: center;
+}
+
+.button{
+    padding-top: 10px;
+}
