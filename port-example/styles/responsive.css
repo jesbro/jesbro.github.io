@@ -1,0 +1,140 @@
+/*-----TABLETS-----*/
+@media only screen and (min-width: 650px){
+    .main-content{
+        margin-top: 150px;
+    }
+    .main-content-home{
+        margin-top: 130px;
+    }
+    .logo img{
+        height: 4em;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .top-nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    /*if toggle open */
+    .top-nav.toggle-open ul{
+        display: flex;
+    }
+    .top-nav ul li {
+        padding: .25em;
+        padding-bottom: .75em;
+        border-top-color: #F54320;
+    }
+    .top-nav ul li a{
+        font-size: 1.25em;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3px;
+    }
+    .menu-icon a{
+        font-size: 1.25em;
+    }   
+    .top-nav ul li a.current-page{
+        color: #F54320;
+        font-weight: bold;
+    }
+    .top-nav ul li a:hover, .top-nav ul li a:focus{
+        background-color: #211D24;
+        color: #E3AD02;
+        font-weight: bold;
+    }
+    .top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
+        content: "\27A4  ";
+        color: #E3AD02;
+        padding-right: 4px;
+        position: relative;
+        top: 1px;
+    }
+    .img-container img{
+        width: 60%;
+        margin: 5% 20%;
+}
+
+/*-----DESKTOPS-----*/
+@media only screen and (min-width: 1100px){
+    .main-content{
+        margin-top: 100px;
+    }
+    .main-content-home{
+        margin-top: 75px;
+    }
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-nav ul {
+        align-items: center;
+        padding-right: .5em;
+    }
+    .top-nav ul li {
+        padding: .25em;
+        border-top: none;
+    }
+    .home-flag{
+        max-width: 400px;
+    }
+}
+
+/*-----OTHER-----*/
+/*further breakpoints for content on about, work, and crafts*/
+@media only screen and (min-width: 450px){
+    /*photo gallery*/
+    .photo-grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .photo-cell{
+        width: 47.5%;
+    }
+    .landscape{
+        width: 98%
+    }
+}
+@media only screen and (min-width: 800px){
+    /*about*/
+    .about{
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container{
+        width: 50%;
+        margin-left: -4em; 
+    }
+    .img-container{
+        width: 45%;
+    }
+    .img-container img{
+        width: 75%;
+        margin: 0;
+    }
+    /*work*/
+    .work{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .work-intro{
+        width: 100%
+        flex: 2;
+    }
+    .work-done, .work-todo{
+        width: 43.5%;
+        margin: 1.5em 0;
+    }
+    /*crafts - photo gallery*/
+    .photo-cell{
+        width: 22.75%;
+    }
+    .landscape{
+        width: 47.5%;
+    }
+}
